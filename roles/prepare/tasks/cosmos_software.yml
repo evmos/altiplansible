@@ -13,6 +13,10 @@
     - chrony
     - lz4
 
+- name: Debug go_version
+  debug:
+    msg: "Using Go version {{ go_version }}"
+
 - name: Download go
   get_url:
     url: 'https://golang.org/dl/go{{ go_version }}.linux-amd64.tar.gz'
@@ -29,6 +33,7 @@
     mode: '0755'
 
 - name: Go get cosmovisor
+  when: install_cosmovisor|default(false)|bool
   command: 'go install github.com/cosmos/cosmos-sdk/cosmovisor/cmd/cosmovisor@{{ cosmovisor_version }}'
   environment:
     PATH: '{{ path }}'

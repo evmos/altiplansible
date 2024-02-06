@@ -1,0 +1,21 @@
+network: dymension
+folder: '.dymension'
+daemon: dymd
+chain_id: dymension_1100-1
+node_version: v3.0.0
+repo: https://github.com/dymensionxyz/dymension.git
+genesis: https://media.githubusercontent.com/media/dymensionxyz/networks/main/mainnet/dymension/genesis.json
+seeds: '284313184f63d9f06b218a67a0e2de126b64258d@seeds.silknodes.io:25155,2031373ae11f2ce79a5e61fb15308c860559cc64@tenderseed.ccvalidators.com:29202,20e1000e88125698264454a884812746c2eb4807@seeds.lavenderfive.com:20556,b02a7c844834bc06ffa7ed3a4e51e3c37462872b@seeds.bh.rocks:40656,baeaf56bca434dd5e0dea3900a9368110b4971f8@seed.hoodrun.io:26656,400f3d9e30b69e78a7fb891f60d76fa3c73f0ecc@dymension.rpc.kjnodes.com:14659'
+peers: 'e7857b8ed09bd0101af72e30425555efa8f4a242@148.251.177.108:20556,3410e9bc9c429d6f35e868840f6b7a0ccb29020b@46.4.5.45:20556'
+upgrade_folder: v3
+custom_port_prefix: 205
+update_website_immediately: false
+minimum_gas_price: 20000000000adym
+go_version: "1.20.3"
+node_name: Altiplanic
+
+# [Optional] Snapshot
+snapshot_hour: 1
+snapshot_minute: 30
+
+

@@ -1,0 +1,14 @@
+[dymension_mainnet]
+mainnet_server ansible_host=135.181.1.25
+
+[all:vars]
+ansible_user=altiplanic
+ansible_port=22
+ansible_ssh_private_key_file="/Users/clydecarver/.ssh/id_rsa"
+var_file="group_vars/mainnets/dymension.yml"
+user_dir="/home/{{ ansible_user }}"
+path="/sbin:/usr/sbin:/bin:/usr/bin:/usr/local/bin:/usr/local/go/bin:{{ user_dir }}/go/bin"
+node_exporter=true
+promtail=false
+install_cosmovisor: false
+
